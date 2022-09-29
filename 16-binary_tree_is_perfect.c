@@ -22,5 +22,5 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	int nodes = (int)bt_size(tree);
 
-	return ((nodes & (nodes + 1)) == 0);
+	return (nodes != 0 && ((nodes & (nodes + 1)) == 0));
 }
